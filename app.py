@@ -11,8 +11,8 @@ UPLOAD_FOLDER = os.path.join(pwd, 'save_file')
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-HOST = "127.0.0.1"
-PORT = 5000
+# HOST = "127.0.0.1"
+# PORT = 5000
 
 
 @app.route('/index')
@@ -35,7 +35,7 @@ def index():
        </body>
     </html>
     """)
-    html = html.substitute({"HOST": HOST, "PORT": PORT})
+    # html = html.substitute({"HOST": HOST, "PORT": PORT})
     return html
 
 
@@ -86,4 +86,4 @@ def download_file():
 
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run()
