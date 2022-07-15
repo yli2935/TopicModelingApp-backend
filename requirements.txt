@@ -1,0 +1,5 @@
+Flask
+Flask-RESTful
+Werkzeug
+Flask-JWT
+uwsgi
